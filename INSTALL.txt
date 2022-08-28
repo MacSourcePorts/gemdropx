@@ -1,0 +1,53 @@
+Gem Drop X INSTALL
+------------------
+May 18, 2002
+
+  Requirements
+  ------------
+    Simple DirectMedia Layer
+    ------------------------
+      Gem Drop X requires SDL 1.1.0 or newer:
+
+        http://www.libsdl.org/
+
+    SDL Mixer Library (optional)
+    -----------------
+      Gem Drop X can use SDL's mixer library (1.0.0 or newer) to play
+      sound and music:
+
+        http://www.libsdl.org/projects/SDL_mixer/
+
+    Joystick (optional)
+    --------
+      Gem Drop X also supports joystick input using SDL's joystick API.
+
+
+  Compiling
+  ---------
+    Generic Compiling
+    -----------------
+      To compile, just type:
+
+        make
+
+    Disable Sound
+    -------------
+      If you do not have the SDL mixer library, or for some reason do not
+      wish to use sound, type:
+
+        make nosound
+
+    Installation
+    ------------
+      After Gem Drop X is compiled, run the following command to
+      install it:
+
+        make install
+
+      The program ("gemdropx") will be copied into /usr/local/bin/.
+      The data will be installed into /usr/local/share/gemdropx/.
+
+  Running
+  -------
+    Just run "gemdropx" to play the game!
+

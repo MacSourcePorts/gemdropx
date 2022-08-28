@@ -1,0 +1,5 @@
+Gem Drop X TODO
+---------------
+
+  * Add an option for using smaller graphics (so the window is fully visible
+    under displays with only 800x600 and perhaps even 640x480 resolution).

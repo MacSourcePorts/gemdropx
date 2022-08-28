@@ -1,0 +1,9 @@
+Gem Drop X ICON
+---------------
+  Feel free to use the "gemdropx-icon.xpm", found in the "gfx/" directory,
+  in FVWM's GoodStuff or your favorite window manager's file/program
+  manager or program dock.
+
+  Note that "gfx/" is located in the distribution directory, as well as
+  in the installed directory, if that was specified at compile-time with
+  an "DATA_PREFIX" value.

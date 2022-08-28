@@ -1,0 +1,54 @@
+Gem Drop X AUTHORS
+------------------
+
+* "Gem Drop" and "Gem Drop X" are copyright by Bill Kendrick,
+  New Breed Software 1997, 1998, 1999.
+
+* Original concept, "Magical Drop III" is copyright SNK, 1997(?).
+
+* Original Action! code ("Gem Drop", for the Atari 8-bit computer) is
+  copyright by Bill Kendrick, New Breed Software, August-September, 1997.
+
+* "Gem Drop X" X-Window port is copyright by Bill Kendrick,
+  New Breed Software, November 1997 - April 1999.
+
+* Patch to allow joystick code to be compiled in, and still run the game
+  without a joystick connected, by Matthew Rice <matt@starnix.com>,
+  October 25, 1999.
+
+* Most graphics by Bernhard Trummer <bernhard.trummer@gmx.net>.  Some by
+  Bill Kendrick, 1997-1999.
+
+* Some sounds stolen from "xboing" by Justin C. Kibell.  Others taken off
+  of random sound effects archives on the web.
+
+* Music by:
+
+  * "2 Force"
+    by Slowhand of Liquid Sounds, 1998
+    1033 Harrer Pal u.16
+    Budapest, Hungary
+    slowhnd@hotmail.com
+    http://???
+
+  * "Hidden Rejection"
+    by Zeek Bower (SUDS), 1999
+    suds@geocities.com
+    http://members.xoom.com/suds/
+    Used with permission
+
+  * "22 Drops"
+    by Christian Funck (ISO of AXIS), 1994
+    Elsakkersstraat 12
+    5081 GN
+    Hilvarenbeek, The Netherlands
+    ???@???
+    http://???
+
+  * "Citronative"
+    by Juha Kujanpaa (Dizzy of CNCD), 1994
+    Marjamaentie 10
+    60510 Hyllykallio
+    Finlandia
+    jtkujanp@itu.cc.jyu.fi
+    http://www.jyu.fi/~jtkujanp/
