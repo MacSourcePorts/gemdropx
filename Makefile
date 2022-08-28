@@ -14,9 +14,9 @@
 # Added 'install' target (finally!): May 18, 2002
 
 
-DATA_PREFIX=/usr/local/share/gemdropx
-SDL_CFLAGS := $(shell sdl-config --cflags)
-SDL_LDFLAGS := $(shell sdl-config --libs)
+DATA_PREFIX=
+# SDL_CFLAGS := $(shell sdl-config --cflags)
+# SDL_LDFLAGS := $(shell sdl-config --libs)
 CC=gcc
 CXX=gcc
 
@@ -27,7 +27,7 @@ JOYFLAG=$(JOY)JOYSTICK
 EMBEDDEDFLAG=NOT_EMBEDDED
 
 
-CFLAGS=-Wall $(SDL_CFLAGS) \
+CFLAGS=-arch $(ARCH) -Wall $(SDL_CFLAGS) \
 	-DDATA_PREFIX=\"$(DATA_PREFIX)\" -D$(NOSOUNDFLAG) -D$(JOYFLAG) \
 	-D$(EMBEDDEDFLAG) $(XTRA_FLAGS)
 SDL_LIB=$(MIXER) $(SDL_LDFLAGS)
@@ -61,7 +61,7 @@ clean:
 
 
 gemdropx:	gemdropx.o
-	$(CXX) $(CFLAGS) -o gemdropx gemdropx.o $(GFX_LIB) -lm
+	$(CXX) $(CFLAGS) -o gemdropx gemdropx.o msputils.m $(GFX_LIB) -lm
 
 
 gemdropx.o:	gemdropx.c

@@ -70,6 +70,7 @@
 #define NUM_EXPLOSIONS 100
 #define STICKWAIT 2
 
+#import "msputils.h"
 
 /* Explosion type: */
 
@@ -643,7 +644,7 @@ void setup(int argc, char * argv[])
       sprintf(file, "%s/images/%s.bmp", DATA_PREFIX, object_filenames[i]);
   
 #ifndef EMBEDDED      
-      image = SDL_LoadBMP(file);
+      image = SDL_LoadBMP(getBundlePathSubdirAndFile("Contents/Resources/Data", file));
       
       if (image == NULL)
 	{
@@ -752,7 +753,7 @@ void setup(int argc, char * argv[])
     for (i = 0; i < NUM_SOUNDS; i++)
       {
         sprintf(file, "%s/sounds/%s.wav", DATA_PREFIX, sound_filenames[i]);
-        samples[i] = Mix_LoadWAV(file);
+        samples[i] = Mix_LoadWAV(getBundlePathSubdirAndFile("Contents/Resources/Data", file));
         if (samples[i] == NULL)
 	  {
 	    fprintf(stderr, "Couldn't load %s: %s\n", file, SDL_GetError());
@@ -769,7 +770,7 @@ void setup(int argc, char * argv[])
         for (i = 0; i < NUM_MODS; i++)
 	  {
 	    sprintf(file, "%s/sounds/%s", DATA_PREFIX, music_filenames[i]);
-	    songs[i] = Mix_LoadMUS(file);
+	    songs[i] = Mix_LoadMUS(getBundlePathSubdirAndFile("Contents/Resources/Data", file));
 	    if (songs[i] == NULL)
 	      {
 	        fprintf(stderr, "Couldn't load %s: %s\n", file, SDL_GetError());
